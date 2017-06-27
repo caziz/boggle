@@ -7,9 +7,7 @@ import java.util.Scanner;
 /**
  * This class will take the input from a user and determine if
  * the input is present in the offline database  
- * @author Hart, Jackson
- * @version May 28th, 2015
- *@return returns true if the word is present in the database, if it is not found returns false.
+ * @return returns true if the word is present in the database, if it is not found returns false.
  *
  */
 public class WordValidator {
