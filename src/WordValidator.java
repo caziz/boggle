@@ -42,10 +42,7 @@ public class WordValidator {
 		}
 		//validWords are all upper case
 		int bIdx = Collections.binarySearch(validWords, word.toUpperCase());
-		if (bIdx < 0) {
-			return false;
-		}
-		return true;
+		return (bIdx >= 0);
 	}
 }
 
