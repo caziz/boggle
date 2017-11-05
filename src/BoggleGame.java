@@ -328,20 +328,22 @@ public class BoggleGame extends JFrame implements ActionListener, KeyListener {
     }
 
     public static int getPoints(String word) {
-        int wordLength = word.length();
-        
-        if (wordLength == 3) {
-            return 1;
-        } else if (wordLength == 4 || wordLength == 5) {
-            return 2;
-        } else if (wordLength == 6) {
-            return 3;
-        } else if (wordLength == 7) {
-            return 5;
-        } else if (wordLength >= 8) {
-            return 11;
-        } else {
-            return 0;
+        switch (word.length()) {
+        	case 0:
+        	case 1:
+        	case 2:
+        		return 0;
+        	case 3:
+        		return 1;
+        	case 4:
+        	case 5:
+        		return 2;
+        	case 6:
+        		return 3;
+        	case 7:
+        		return 5;
+        	default:
+        		return 11;        	
         }
     }
 }
